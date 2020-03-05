@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.LoginActivity">
+    
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logojatim"
+        android:layout_marginTop="16dp"
+        android:id="@+id/logoImage"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_below="@id/logoImage"
+        android:background="@color/fillWhite"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_input_username"
+            android:inputType="textPersonName"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:id="@+id/inputUsernameEt"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_input_passwd"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:id="@+id/inputPasswdEt"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="5pt"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="loginBtnCLicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

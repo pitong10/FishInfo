@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_ikan"
+        android:textSize="7pt"
+        android:id="@+id/namaIkanTv"
+        android:textColor="@color/textBlack"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:text=" Kg"
+        android:textColor="@color/textBlack"
+        android:layout_toEndOf="@+id/volumeTv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textSize="7pt"
+        android:layout_marginStart="3dp"
+        android:id="@+id/volumeTv"
+        android:textColor="@color/textBlack"
+        android:layout_toEndOf="@id/namaIkanTv"
+        android:text="50000"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/trash"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/hapusImg"/>
+</RelativeLayout>

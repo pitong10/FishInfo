@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardBackgroundColor="@color/textWhite"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNamaPedagang"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Pedagang : "
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/pedagangTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_toEndOf="@id/tvNamaPedagang"
+            android:text="Ferry" />
+
+        <TextView
+            android:id="@+id/tvNamaIkan"
+            android:layout_marginEnd="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_below="@id/tvNamaPedagang"
+            android:text="Nama Ikan : " />
+
+        <TextView
+            android:id="@+id/ikanTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pedagangTv"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_toEndOf="@id/tvNamaPedagang"
+            android:text="Salmon" />
+
+        <TextView
+            android:id="@+id/hargaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:background="@color/textBlack"
+            android:textColor="@color/textWhite"
+            android:textSize="8pt"
+            android:text="Rp.10000,-" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

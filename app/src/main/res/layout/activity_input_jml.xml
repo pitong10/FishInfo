@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fillWhite"
+        android:layout_margin="16dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/formInputLayout"
+        android:orientation="vertical"
+        tools:context=".Activity.InputActivity">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/namapasar"
+            android:textColor="@color/textBlack"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/namaPasarSp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@color/textWhite"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/nama_pasar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/namapedagang"
+            android:textColor="@color/textBlack"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/namaPedagangSp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/textWhite"
+            android:layout_marginStart="16dp"
+            android:entries="@array/nama_pedagang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:id="@+id/rv_ikank"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/tambah_ikan"
+            android:onClick="inputJmlIkanBtnCLicked"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:text="@string/simpan"
+        android:onClick="btnExFishClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>

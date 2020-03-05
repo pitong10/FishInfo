@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/namaikan"
+        android:textColor="@color/textBlack"
+        android:textSize="8pt" />
+
+    <AutoCompleteTextView
+        android:id="@+id/namaIkanActv"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/pilih_jenis_ikan"
+        android:completionHint="@string/pilih_jenis_ikan"
+        android:completionThreshold="1"
+        android:textColor="@color/textBlack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Volume(kg) : "
+        android:textColor="@color/textBlack"
+        android:textSize="8pt" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:inputType="number"
+        android:id="@+id/volumeEt"/>
+
+</LinearLayout>

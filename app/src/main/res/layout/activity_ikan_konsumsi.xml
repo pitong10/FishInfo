@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.IkanKonsumsiActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logojatim"
+        android:layout_above="@id/formPencarian"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/formPencarian"
+        android:paddingStart="10dp"
+        android:background="@color/fillWhite"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_ikan"
+            android:textStyle="bold"
+            android:id="@+id/tvIkan"
+            android:textColor="@color/textBlack"
+            android:textSize="8pt" />
+
+        <AutoCompleteTextView
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:hint="@string/pilih_jenis_ikan"
+            android:completionThreshold="1"
+            android:textColor="@color/textBlack"
+            android:background="@color/textWhite"
+            android:completionHint="@string/pilih_jenis_ikan"
+            android:id="@+id/ikanActv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_kota"
+            android:textStyle="bold"
+            android:id="@+id/tvKota"
+            android:textColor="@color/textBlack"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/namaKotaSp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@color/textWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/namapasar"
+            android:textStyle="bold"
+            android:id="@+id/tvPasar"
+            android:textColor="@color/textBlack"
+            android:textSize="8pt" />
+
+        <Spinner
+            android:id="@+id/namaPasarSp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@color/textWhite" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="BtnCariClicked"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/cari_data"/>
+    </LinearLayout>
+
+</RelativeLayout>

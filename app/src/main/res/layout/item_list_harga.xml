@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardBackgroundColor="@color/textWhite"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNamaPasar"
+            android:layout_width="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Pasar"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/pasarTv"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_toEndOf="@id/tvNamaPasar"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvNamaIkan"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_below="@id/pasarTv"
+            android:text="Nama Ikan" />
+
+        <TextView
+            android:id="@+id/ikanTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pasarTv"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_toEndOf="@id/tvNamaIkan"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvVolume"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_below="@id/tvNamaIkan"
+            android:text="Volume" />
+
+        <TextView
+            android:id="@+id/volumeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ikanTv"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textBlack"
+            android:layout_toEndOf="@id/tvVolume"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/hargaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:background="@color/textBlack"
+            android:textColor="@color/textWhite"
+            android:textSize="8pt"
+            android:text="Rp.10000,-" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

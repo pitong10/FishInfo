@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ex_ikan"
+        android:id="@+id/namaIkanTv"
+        android:textSize="7pt"
+        android:textColor="@color/textBlack"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/namaIkanTv"
+        android:layout_marginStart="5dp"
+        android:text="Rp."
+        android:id="@+id/rpTv"
+        android:textColor="@color/textBlack"
+        android:textSize="7pt" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="4dp"
+        android:textSize="7pt"
+        android:layout_toEndOf="@id/rpTv"
+        android:id="@+id/hargaIkanTv"
+        android:textColor="@color/textBlack"
+        android:text="50000"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/volumeIkanTv"
+        android:text=" Kg"
+        android:layout_toStartOf="@id/editImg"
+        android:id="@+id/kgTv"
+        android:textColor="@color/textBlack"
+        android:textSize="7pt" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textSize="7pt"
+        android:layout_toEndOf="@id/hargaIkanTv"
+        android:id="@+id/volumeIkanTv"
+        android:textColor="@color/textBlack"
+        android:text="1000"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_action_edit"
+        android:layout_toLeftOf="@id/hapusImg"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/editImg"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/trash"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/hapusImg"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Fish Info Mobile</string>
+    <string name="txt_consume_price">Harga Ikan Konsumsi</string>
+    <string name="txt_nonconsume_price">Harga Ikan Non Konsumsi</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_input_username">Masukkan username</string>
+    <string name="txt_input_passwd">Masukkan password</string>
+    <string name="login">Login</string>
+    <string name="login_btn">Anda admin? Tap disini untuk login…</string>
+    <string name="back">back</string>
+    <string name="input_harga_ikan">Input Harga Ikan</string>
+    <string name="input_jml_ikan">Input Ketersediaan Ikan</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="ketersediaan_ikan">Ketersediaan ikan</string>
+    <string name="pasar">Pasar</string>
+    <string name="namapasar">Nama pasar</string>
+    <string name="namapedagang">Nama pedagang :</string>
+    <string name="tambah_ikan">Tambah Ikan</string>
+    <string name="namaikan">Nama ikan</string>
+    <string name="volume">Volume</string>
+    <string name="volume_kg">Volume(kg)</string>
+    <string name="simpan">Simpan</string>
+    <string name="hargaikan">Harga ikan(/Kg)</string>
+    <string name="app_desc">Dinas Perikanan dan Kelautan Provinsi Jawa Timur</string>
+    <string name="ex_ikan">Salmon</string>
+    <string name="pilih_provinsi">Pilih provinsi</string>
+    <string name="cari_data">Cari data</string>
+    <string name="desc2">Cari data yang ingin anda tampikan</string>
+    <string name="nama_kota">Nama kota :</string>
+    <string name="nama_ikan">Nama Ikan</string>
+    <string name="pilih_jenis_ikan">Pilih jenis ikan</string>
+    <string name="pilih_kota">Pilih kota</string>
+    <string name="pilih_pasar">Pilih pasar</string>
+    <string name="input_ketersediaan_ikan">Input ketersediaan ikan</string>
+    <string name="informasi_perikanan_txt">Informasi Perikanan</string>
+
+    <string-array name="nama_pasar">
+        <item>Pasar Ikan A</item>
+        <item>Pasar Ikan B</item>
+        <item>Pasar Ikan C</item>
+        <item>Pasar Ikan D</item>
+    </string-array>
+
+    <string-array name="nama_periode">
+        <item>Minggu ini</item>
+        <item>Minggu sebelumnya</item>
+        <item>2 minggu sebelumnya</item>
+    </string-array>
+
+    <string-array name="nama_kota">
+        <item>Surabaya</item>
+        <item>Mojokerto</item>
+        <item>Gresik</item>
+        <item>Bojonegoro</item>
+    </string-array>
+
+    <string-array name="nama_pedagang">
+        <item>Ferry</item>
+        <item>Pitong</item>
+        <item>Fatoni</item>
+        <item>Eko</item>
+    </string-array>
+
+    <string-array name="nama_ikan">
+        <item>Tenggiri</item>
+        <item>Tongkol </item>
+        <item>Sarden</item>
+        <item>Salmon</item>
+    </string-array>
+    <string name="title_activity_input_harga_konsumsi">InputHargaKonsumsiActivity</string>
+    <string name="tab_text_1">Pasar</string>
+    <string name="tab_text_2">Grosir</string>
+    <string name="tab_text_3">Produsen</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_list_harga_admin">ListHargaAdminActivity</string>
+    <string name="title_activity_list_harga">ListHargaActivity</string>
+    <string name="lihat_grafik_txt">Informasi Perikanan</string>
+    <string name="tanggal">Tanggal :</string>
+
+</resources>
